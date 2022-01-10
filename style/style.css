@@ -1,11 +1,18 @@
 * {
   box-sizing: border-box;
+  border: 1px solid dodgerblue;
   margin: 0px;
   padding: 0px;
   color: #363636;
   background-color: #ffffff;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
+}
+
+@media only screen and (max-width: 400px) {
+  p {
+    font-size: 0.7rem;
+  }
 }
 
 .body--deactive {
@@ -567,17 +574,25 @@ footer .newsletter input {
     width: 50%;
   }
 }
+.detail-page .product__img {
+  width: 100%;
+}
+.detail-page .product .info-container {
+  width: 100%;
+}
 @media only screen and (min-width: 1000px) {
   .detail-page .product .info-container {
     width: 50%;
   }
 }
-.detail-page .product__img {
-  width: 100%;
-}
 .detail-page .product__info {
-  width: 500px;
+  width: 100%;
   padding: 50px 25px;
+}
+@media only screen and (min-width: 500px) {
+  .detail-page .product__info {
+    width: 500px;
+  }
 }
 @media only screen and (min-width: 1000px) {
   .detail-page .product__info {
