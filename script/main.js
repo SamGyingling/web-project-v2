@@ -12,10 +12,10 @@ window.addEventListener('click', e => {
             overlay.classList.add('overlay--active');
             body.classList.add('body--deactive');
         }
-        if (currentDropDown.dataset.dropdown === 'sort' ) {
+        if (currentDropDown.dataset.dropdown === 'sort') {
             currentDropDown.classList.toggle('collection__sort--active');
             body.classList.toggle('body--deactive');
-            if(document.body.offsetWidth<1000){
+            if (document.body.offsetWidth < 1000) {
                 overlay.classList.toggle('overlay--active');
             }
         }
@@ -50,15 +50,3 @@ window.addEventListener('click', e => {
         })
     })
 })
-    // document.querySelectorAll('[data-dropdown].menu--active').forEach(item => {
-    //     if (item === currentDropDown) return;
-    //     item.classList.remove('menu--active');
-
-    // })
-    // document.querySelectorAll('[data-dropdown].collection__sort--active').forEach(item => {
-    //     if (item === currentDropDown) return;
-    //     item.classList.remove('collection__sort--active');
-
-    // })
-
-

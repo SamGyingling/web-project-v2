@@ -11,9 +11,9 @@ $prime-background: #ffffff;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
 }
-p{
+p {
   @media only screen and(max-width:400px) {
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
 }
 .body--deactive {
@@ -50,7 +50,6 @@ button {
   position: fixed;
   background-color: #363636;
   transition: 0.5s ease-in;
-
 }
 .overlay--active {
   display: block;
@@ -77,7 +76,7 @@ header {
       flex-grow: 1;
       flex-basis: 0;
     }
-    h1{
+    h1 {
       @media only screen and (max-width: 430px) {
         font-size: 1.5rem;
       }
@@ -88,7 +87,8 @@ header {
       display: flex;
       justify-content: flex-end;
       @media only screen and (max-width: 430px) {
-        .fa-user,.fa-search{
+        .fa-user,
+        .fa-search {
           display: none;
         }
       }
